@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  <!-- SEO & Social Meta Tags -->
+  <title>Pedro Sante | Portfólio — Desenvolvedor & Estudante de TI</title>
+  <meta name="description" content="Portfólio profissional de Pedro Sante Maria Bueno Silva, estudante do Ensino Médio Técnico em TI. Projetos de desenvolvimento web, jogos e tecnologia." />
+  <meta name="author" content="Pedro Sante Maria Bueno Silva" />
+  <meta name="keywords" content="Pedro Sante, Pedro Sante Maria Bueno Silva, Desenvolvedor Web, Técnico em TI, Front-end, JavaScript, React, Node.js, Portfólio, Hangar Prime, GameHub" />
+  
+  <!-- Open Graph / Facebook / LinkedIn -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Pedro Sante | Desenvolvedor & Estudante de TI" />
+  <meta property="og:description" content="Transformando ideias em experiências digitais. Conheça meus projetos, tecnologias e canais de contato." />
+  <meta property="og:site_name" content="Pedro Sante Portfolio" />
+  
+  <!-- Favicon SVG dinâmico -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%238B5CF6'/%3E%3Cstop offset='100%25' stop-color='%2338BDF8'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='24' fill='%230B1020'/%3E%3Ctext x='50' y='64' font-family='sans-serif' font-weight='800' font-size='42' fill='url(%23g)' text-anchor='middle'%3EPS%3C/text%3E%3C/svg%3E" />
+  
+  <!-- Google Fonts: Space Grotesk & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  
+  <!-- Estilos principais -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Efeitos de iluminação de fundo (Ambient Lighting) -->
+  <div class="ambient-glow glow-1" aria-hidden="true"></div>
+  <div class="ambient-glow glow-2" aria-hidden="true"></div>
+  <div class="ambient-grid" aria-hidden="true"></div>
+
+  <!-- Cabeçalho & Menu de Navegação Fixo -->
+  <header class="header" id="header">
+    <div class="container header-container">
+      <a href="#inicio" class="logo" aria-label="Pedro Sante - Página Inicial">
+        <span class="logo-bracket">&lt;</span>
+        <span class="logo-name">Pedro Sante</span>
+        <span class="logo-bracket">/&gt;</span>
+      </a>
+
+      <nav class="nav-menu" id="nav-menu" aria-label="Navegação Principal">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#inicio" class="nav-link active">Início</a>
+          </li>
+          <li class="nav-item">
+            <a href="#sobre" class="nav-link">Sobre mim</a>
+          </li>
+          <li class="nav-item">
+            <a href="#projetos" class="nav-link">Projetos</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contato" class="nav-link">Contato</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <!-- Alternador de Tema (Dark / Light) -->
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Alternar tema claro e escuro" title="Alternar tema claro/escuro">
+          <svg class="theme-icon icon-sun" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="theme-icon icon-moon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <!-- Botão Menu Hambúrguer (Mobile) -->
+        <button id="mobile-toggle" class="mobile-toggle-btn" aria-label="Abrir menu de navegação" aria-expanded="false" aria-controls="nav-menu">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- ================= SEÇÃO 1: HERO ================= -->
+    <section class="hero-section" id="inicio">
+      <!-- Canvas com constelação de partículas interativas -->
+      <canvas id="hero-canvas" class="hero-canvas" aria-hidden="true"></canvas>
+
+      <div class="container hero-container">
+        <div class="hero-content">
+          <!-- Badge com status -->
+          <div class="hero-badge animate-fade-in" style="--delay: 100ms;">
+            <span class="status-dot"></span>
+            <span>Estudante do 3º ano do Ensino Médio Técnico em TI</span>
+          </div>
+
+          <!-- Saudação e títulos principais -->
+          <div class="hero-titles">
+            <p class="hero-greeting animate-fade-in" style="--delay: 200ms;">
+              Olá, eu sou Pedro Sante.
+            </p>
+            <h1 class="hero-headline animate-fade-in" style="--delay: 350ms;">
+              Transformando ideias em <span class="gradient-text">experiências digitais</span>.
+            </h1>
+            <p class="hero-description animate-fade-in" style="--delay: 500ms;">
+              Sou <strong>Pedro Sante Maria Bueno Silva</strong>, estudante do Ensino Médio Técnico em TI, apaixonado por tecnologia, programação e desenvolvimento de soluções digitais.
+            </p>
+          </div>
+
+          <!-- Botões de Ação -->
+          <div class="hero-actions animate-fade-in" style="--delay: 650ms;">
+            <a href="#projetos" class="btn btn-primary">
+              <span>Ver meus projetos</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="#contato" class="btn btn-secondary">
+              <span>Entrar em contato</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Quick tags de interesse -->
+          <div class="hero-tags animate-fade-in" style="--delay: 800ms;">
+            <span class="tag-pill">Desenvolvimento Web</span>
+            <span class="tag-pill">Criação de Jogos</span>
+            <span class="tag-pill">Programação & Lógica</span>
+          </div>
+        </div>
+
+        <!-- Terminal Decorativo Interativo -->
+        <div class="hero-visual animate-fade-in" style="--delay: 500ms;" aria-hidden="true">
+          <div class="code-window">
+            <div class="code-window-header">
+              <div class="code-window-dots">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+              <div class="code-window-title">pedro-sante.dev &bull; bash</div>
+              <div class="code-window-lang">TypeScript</div>
+            </div>
+            <div class="code-window-body">
+              <pre><code><span class="token-keyword">const</span> <span class="token-variable">developer</span> = {
+  <span class="token-property">nome</span>: <span class="token-string">"Pedro Sante Maria Bueno Silva"</span>,
+  <span class="token-property">idade</span>: <span class="token-number">17</span>,
+  <span class="token-property">formacao</span>: <span class="token-string">"3º Ano • Ensino Médio Técnico em TI"</span>,
+  <span class="token-property">paixoes</span>: [
+    <span class="token-string">"Tecnologia"</span>,
+    <span class="token-string">"Programação Web"</span>,
+    <span class="token-string">"Criação de Jogos"</span>
+  ],
+  <span class="token-property">status</span>: <span class="token-string">"Transformando ideias em código..."</span>
+};
+
+<span class="token-comment">// Projetos em produção</span>
+<span class="token-keyword">await</span> <span class="token-function">carregarProjetos</span>();</code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Indicador animado de rolagem -->
+      <a href="#sobre" class="scroll-indicator" aria-label="Rolar para a seção Sobre mim">
+        <span class="scroll-mouse">
+          <span class="scroll-wheel"></span>
+        </span>
+        <span class="scroll-text">Role para explorar</span>
+      </a>
+    </section>
+
+    <!-- ================= SEÇÃO 2: SOBRE MIM ================= -->
+    <section class="section about-section" id="sobre">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">// 01. TRAJETÓRIA</span>
+          <h2 class="section-title">Um pouco sobre mim</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="about-grid">
+          <!-- Card de Biografia e Perfil -->
+          <div class="about-bio-card card spotlight-card">
+            <div class="bio-header">
+              <div class="bio-avatar">
+                <span class="avatar-initials">PS</span>
+                <span class="avatar-ring"></span>
+              </div>
+              <div class="bio-meta">
+                <h3 class="bio-name">Pedro Sante Maria Bueno Silva</h3>
+                <p class="bio-role">Estudante de Tecnologia da Informação &bull; 17 anos</p>
+              </div>
+            </div>
+
+            <div class="bio-body">
+              <p class="bio-text">
+                Meu nome é <strong>Pedro Sante Maria Bueno Silva</strong> e atualmente estou cursando o terceiro ano do Ensino Médio integrado ao Técnico em Tecnologia da Informação. Tenho interesse em programação, desenvolvimento de sites, sistemas e jogos digitais. Durante minha formação, venho desenvolvendo projetos que me permitem colocar meus conhecimentos em prática, explorar novas tecnologias e aprimorar minhas habilidades.
+              </p>
+            </div>
+
+            <div class="bio-highlights">
+              <div class="highlight-item">
+                <div class="highlight-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                    <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="highlight-title">Ensino Médio Técnico</h4>
+                  <p class="highlight-desc">Terceiro ano integrado em TI</p>
+                </div>
+              </div>
+
+              <div class="highlight-item">
+                <div class="highlight-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="16 18 22 12 16 6"></polyline>
+                    <polyline points="8 6 2 12 8 18"></polyline>
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="highlight-title">Foco Prático</h4>
+                  <p class="highlight-desc">Desenvolvimento web, sistemas e games</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Área: Tecnologias e Conhecimentos -->
+          <div class="skills-wrapper">
+            <div class="skills-header">
+              <h3 class="skills-subtitle">Tecnologias e conhecimentos</h3>
+              <p class="skills-caption">Ferramentas e linguagens que utilizo no desenvolvimento de projetos e estudos contínuos:</p>
+            </div>
+
+            <div class="skills-grid">
+              <!-- HTML5 -->
+              <div class="skill-card card spotlight-card" data-tech="html">
+                <div class="skill-icon-wrap html-icon">
+                  <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor">
+                    <path d="M12 2L3 5l1.6 14.4L12 22l7.4-2.6L21 5l-9-3zm0 2.2l6.8 2.3-1.2 11.2-5.6 2-5.6-2L5.2 6.5 12 4.2zm-4.4 5.3l.3 2.5h8.2l-.3 3.2-3.8 1.1-3.8-1.1-.2-1.8H5.9l.4 3.7 5.7 1.6 5.7-1.6.8-7.9H7.6z"/>
+                  </svg>
+                </div>
+                <div class="skill-info">
+                  <span class="skill-name">HTML5</span>
+                  <span class="skill-type">Estrutura & Semântica</span>
+                </div>
+              </div>
+
+              <!-- CSS3 -->
+              <div class="skill-card card spotlight-card" data-tech="css">
+                <div class="skill-icon-wrap css-icon">
+                  <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor">
+                    <path d="M12 2L3 5l1.6 14.4L12 22l7.4-2.6L21 5l-9-3zm0 2.2l6.8 2.3-1.2 11.2-5.6 2-5.6-2L5.2 6.5 12 4.2zm4.3 4.3H7.4l.2 2.2h8.3l-.4 4.3-3.5 1-3.5-1-.2-1.7H6.1l.4 3.5 5.5 1.5 5.5-1.5.8-7.8z"/>
+                  </svg>
+                </div>
+                <div class="skill-info">
+                  <span class="skill-name">CSS3</span>
+                  <span class="skill-type">Estilização & Responsividade</span>
+                </div>
+              </div>
+
+              <!-- JavaScript -->
+              <div class="skill-card card spotlight-card" data-tech="javascript">
+                <div class="skill-icon-wrap js-icon">
+                  <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor">
+                    <path d="M3 3h18v18H3V3zm13.7 14.5c1.4 0 2.3-.7 2.3-2v-4.5h-1.8v4.4c0 .5-.3.7-.7.7s-.7-.2-.7-.7v-1.7h-1.8v1.8c0 1.3.9 2 2.7 2zm-6.2 0c1.7 0 2.8-.9 2.8-2.3 0-1.5-.9-2-2.3-2.4l-.5-.2c-.6-.2-.9-.4-.9-.8 0-.4.3-.7.9-.7.6 0 .9.3 1 .8h1.7c-.1-1.3-1.1-2.2-2.7-2.2-1.5 0-2.6.8-2.6 2.2 0 1.3.8 1.9 2.2 2.3l.5.2c.7.2 1 .4 1 .9 0 .5-.4.8-1 .8-.7 0-1.1-.4-1.2-1H6.7c.1 1.4 1.3 2.4 3.8 2.4z"/>
+                  </svg>
+                </div>
+                <div class="skill-info">
+                  <span class="skill-name">JavaScript</span>
+                  <span class="skill-type">Interatividade & Lógica</span>
+                </div>
+              </div>
+
+              <!-- Java -->
+              <div class="skill-card card spotlight-card" data-tech="java">
+                <div class="skill-icon-wrap java-icon">
+                  <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor">
+                    <path d="M8.8 18.2s-.6.5.4.6c1.3.2 2.1.2 3.6-.2 0 0 .5.3.9.5-2.7 1.1-5.9.1-4.9-.9zm-1.1-2.4c2.8.3 5.4.1 7.6-.8 0 0-.4.5-.8.7-2.7.7-6.2.7-7.9-.2.3-.3.7-.6 1.1-.7zm7.5-3.3c.7 1.4-1.8 2.6-1.8 2.6s1.3-.4.8-1.5c-.5-1.1-1.9-1.6-1.9-1.6s1.9.4 2.9.5zm-5-1.9c-.8.8-1.8 1.9-.9 2.7.9.8 1.7.5 2.8.2 1.4-.4 2.8-.4 2.8-.4s-.6.4-1.2.6c-1.3.5-2.7.6-3.8-.1-1.1-.7-1-1.9-.2-2.6.5-.4.5-.4.5-.4zm5.5 10.3c-2.3.9-6.6.9-8.7 0-.7-.3 0-.6.3-.7 1.9.5 5.5.5 7.7-.1.7-.2 1.1.6.7.8zM12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm1.6 7.2c-.4.5-.9 1-1.4 1.5-.7-.4-1.4-.8-1.4-1.5 0-.8.6-1.5 1.4-1.8.6.6 1.1 1.2 1.4 1.8z"/>
+                  </svg>
+                </div>
+                <div class="skill-info">
+                  <span class="skill-name">Java</span>
+                  <span class="skill-type">POO & Estruturas de Dados</span>
+                </div>
+              </div>
+
+              <!-- React -->
+              <div class="skill-card card spotlight-card" data-tech="react">
+                <div class="skill-icon-wrap react-icon">
+                  <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.8">
+                    <ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(0 12 12)"></ellipse>
+                    <ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(60 12 12)"></ellipse>
+                    <ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(120 12 12)"></ellipse>
+                    <circle cx="12" cy="12" r="2" fill="currentColor"></circle>
+                  </svg>
+                </div>
+                <div class="skill-info">
+                  <span class="skill-name">React</span>
+                  <span class="skill-type">Interfaces Reativas & SPAs</span>
+                </div>
+              </div>
+
+              <!-- Node.js -->
+              <div class="skill-card card spotlight-card" data-tech="nodejs">
+                <div class="skill-icon-wrap node-icon">
+                  <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor">
+                    <path d="M12 2l9 5.2v10.4L12 23l-9-5.4V7.2L12 2zm0 2.3L4.9 8.4v7.2l7.1 4.2 7.1-4.2V8.4L12 4.3zm0 3.3l5 3v5.8l-5 3-5-3v-5.8l5-3z"/>
+                  </svg>
+                </div>
+                <div class="skill-info">
+                  <span class="skill-name">Node.js</span>
+                  <span class="skill-type">Backend & APIs</span>
+                </div>
+              </div>
+
+              <!-- Git & GitHub -->
+              <div class="skill-card card spotlight-card" data-tech="git">
+                <div class="skill-icon-wrap git-icon">
+                  <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor">
+                    <path d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/>
+                  </svg>
+                </div>
+                <div class="skill-info">
+                  <span class="skill-name">Git & GitHub</span>
+                  <span class="skill-type">Controle de Versão</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SEÇÃO 3: PROJETOS ================= -->
+    <section class="section projects-section" id="projetos">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">// 02. PORTFÓLIO EM AÇÃO</span>
+          <h2 class="section-title">Projetos que desenvolvi</h2>
+          <p class="section-subtitle">Soluções completas com foco em interface, usabilidade e integração de dados.</p>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="projects-grid">
+          <!-- PROJETO 1: Hangar Prime Imóveis -->
+          <article class="project-card card spotlight-card">
+            <!-- Mockup / Visual do Projeto 1 -->
+            <div class="project-preview">
+              <div class="preview-browser-bar">
+                <span class="preview-dot"></span>
+                <span class="preview-dot"></span>
+                <span class="preview-dot"></span>
+                <span class="preview-url">lp-wbni.vercel.app</span>
+              </div>
+              <div class="preview-content project-hangar-bg">
+                <div class="preview-overlay">
+                  <div class="preview-badge-tcc">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+                    <span>Trabalho de Conclusão de Curso (TCC)</span>
+                  </div>
+                  <h4 class="preview-title">Hangar Prime Imóveis</h4>
+                  <p class="preview-subtitle">Plataforma Imobiliária Full Stack com Filtros & Banco de Dados</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Detalhes do Projeto 1 -->
+            <div class="project-body">
+              <div class="project-category">Projeto Imobiliário &bull; TCC</div>
+              <h3 class="project-name">Hangar Prime Imóveis</h3>
+              <p class="project-description">
+                Desenvolvimento de um site imobiliário com apresentação de imóveis, sistema de filtros, páginas individuais e integração com banco de dados. Projeto desenvolvido como Trabalho de Conclusão de Curso (TCC).
+              </p>
+
+              <!-- Tecnologias -->
+              <div class="project-tech-stack">
+                <span class="tech-badge">HTML</span>
+                <span class="tech-badge">CSS</span>
+                <span class="tech-badge">JavaScript</span>
+                <span class="tech-badge">Node.js</span>
+                <span class="tech-badge">MongoDB</span>
+              </div>
+
+              <!-- Botões de Ação -->
+              <div class="project-actions">
+                <a href="https://lp-wbni.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                  <span>Visualizar site</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a>
+                <button class="btn btn-outline btn-sm github-notice-btn" data-project="Hangar Prime Imóveis" title="Consultar repositório no GitHub">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                    <path d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/>
+                  </svg>
+                  <span>GitHub</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJETO 2: GameHub -->
+          <article class="project-card card spotlight-card">
+            <!-- Mockup / Visual do Projeto 2 -->
+            <div class="project-preview">
+              <div class="preview-browser-bar">
+                <span class="preview-dot"></span>
+                <span class="preview-dot"></span>
+                <span class="preview-dot"></span>
+                <span class="preview-url">gamehub-backend-nine.vercel.app</span>
+              </div>
+              <div class="preview-content project-gamehub-bg">
+                <div class="preview-overlay">
+                  <div class="preview-badge-games">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="6 2 18 2 18 6 6 6 6 2"/><rect x="3" y="6" width="18" height="16" rx="2"/><circle cx="8" cy="14" r="1.5"/><circle cx="16" cy="14" r="1.5"/></svg>
+                    <span>Universo Gamer &bull; Web App</span>
+                  </div>
+                  <h4 class="preview-title">GameHub</h4>
+                  <p class="preview-subtitle">Interface Interativa, Cadastro & Ecossistema de Jogos</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Detalhes do Projeto 2 -->
+            <div class="project-body">
+              <div class="project-category">Games &bull; Aplicação Web</div>
+              <h3 class="project-name">GameHub</h3>
+              <p class="project-description">
+                Desenvolvimento de uma aplicação web voltada ao universo dos jogos, com interface interativa e funcionalidades de cadastro, utilizando tecnologias de desenvolvimento web.
+              </p>
+
+              <!-- Tecnologias -->
+              <div class="project-tech-stack">
+                <span class="tech-badge">HTML5</span>
+                <span class="tech-badge">CSS3</span>
+                <span class="tech-badge">JavaScript</span>
+                <span class="tech-badge">Node.js</span>
+              </div>
+
+              <!-- Botões de Ação -->
+              <div class="project-actions">
+                <a href="https://gamehub-backend-nine.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                  <span>Visualizar site</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a>
+                <button class="btn btn-outline btn-sm github-notice-btn" data-project="GameHub" title="Consultar repositório no GitHub">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                    <path d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/>
+                  </svg>
+                  <span>GitHub</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJETO 3: Em Desenvolvimento -->
+          <article class="project-card card spotlight-card project-card-upcoming">
+            <div class="project-preview preview-upcoming">
+              <div class="upcoming-radar">
+                <div class="radar-circle radar-1"></div>
+                <div class="radar-circle radar-2"></div>
+                <div class="radar-circle radar-3"></div>
+                <div class="radar-scanner"></div>
+                <div class="radar-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                    <polyline points="2 17 12 22 22 17"></polyline>
+                    <polyline points="2 12 12 17 22 12"></polyline>
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <div class="project-category">Inovação &bull; Em Construção</div>
+              <h3 class="project-name upcoming-title">Novos projetos estão a caminho.</h3>
+              <p class="project-description">
+                Continuo explorando novos conceitos em desenvolvimento web, sistemas interativos e criação de jogos. Novas ideias e implementações práticas estão sendo estruturadas para publicação em breve.
+              </p>
+
+              <!-- Tecnologias em foco -->
+              <div class="project-tech-stack">
+                <span class="tech-badge tech-badge-pulse">Novas Tecnologias</span>
+                <span class="tech-badge">Web & Game Dev</span>
+                <span class="tech-badge">Em Progresso</span>
+              </div>
+
+              <div class="project-actions">
+                <div class="upcoming-status-badge">
+                  <span class="pulse-indicator"></span>
+                  <span>Desenvolvimento ativo</span>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SEÇÃO 4: CONTATO ================= -->
+    <section class="section contact-section" id="contato">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">// 03. CONEXÃO & OPORTUNIDADES</span>
+          <h2 class="section-title">Vamos conversar?</h2>
+          <p class="section-subtitle">Tem alguma ideia, projeto ou oportunidade? Entre em contato comigo!</p>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Informações de Contato e Redes -->
+          <div class="contact-info-col">
+            <div class="contact-card card spotlight-card">
+              <h3 class="contact-info-title">Canais de Contato</h3>
+              <p class="contact-info-text">
+                Fique à vontade para me enviar uma mensagem, trocar ideias sobre programação, games ou conversar sobre novos projetos e aprendizados.
+              </p>
+
+              <div class="contact-channels">
+                <!-- GitHub -->
+                <a href="https://github.com/skullacho" target="_blank" rel="noopener noreferrer" class="channel-item">
+                  <div class="channel-icon git-channel">
+                    <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+                      <path d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/>
+                    </svg>
+                  </div>
+                  <div class="channel-details">
+                    <span class="channel-label">GitHub</span>
+                    <span class="channel-val">github.com/skullacho</span>
+                  </div>
+                  <span class="channel-arrow">&rarr;</span>
+                </a>
+
+                <!-- LinkedIn -->
+                <a href="https://linkedin.com/in/pedrosante" target="_blank" rel="noopener noreferrer" class="channel-item">
+                  <div class="channel-icon in-channel">
+                    <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+                      <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9h2.77v8.37H6.46v-8.37M7.84 6.88a1.63 1.63 0 1 0 0 3.26 1.63 1.63 0 0 0 0-3.26z"/>
+                    </svg>
+                  </div>
+                  <div class="channel-details">
+                    <span class="channel-label">LinkedIn</span>
+                    <span class="channel-val">linkedin.com/in/pedrosante</span>
+                  </div>
+                  <span class="channel-arrow">&rarr;</span>
+                </a>
+
+                <!-- E-mail -->
+                <a href="mailto:pedrosmbsilva@gmail.com" class="channel-item">
+                  <div class="channel-icon mail-channel">
+                    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                      <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                  </div>
+                  <div class="channel-details">
+                    <span class="channel-label">E-mail</span>
+                    <span class="channel-val">pedrosmbsilva@gmail.com</span>
+                  </div>
+                  <span class="channel-arrow">&rarr;</span>
+                </a>
+              </div>
+
+              <!-- Cartão de disponibilidade -->
+              <div class="availability-badge">
+                <span class="status-indicator"></span>
+                <span>Disponível para estágios, projetos acadêmicos e desafios na área de TI.</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Formulário com Validação Real & Envio Funcional -->
+          <div class="contact-form-col">
+            <div class="form-card card spotlight-card">
+              <h3 class="form-card-title">Envie uma mensagem</h3>
+              <p class="form-card-desc">Preencha os campos abaixo. O formulário conta com mecanismo real de envio integrado.</p>
+
+              <form id="contact-form" class="contact-form" novalidate>
+                <!-- Campo Nome -->
+                <div class="form-group">
+                  <label for="contact-name" class="form-label">
+                    <span>Nome completo</span>
+                    <span class="required-mark">*</span>
+                  </label>
+                  <div class="input-wrapper">
+                    <input 
+                      type="text" 
+                      id="contact-name" 
+                      name="name" 
+                      class="form-input" 
+                      placeholder="Ex: Seu Nome" 
+                      required 
+                      minlength="3" 
+                      autocomplete="name" 
+                    />
+                    <span class="input-focus-border"></span>
+                  </div>
+                  <span class="field-error" id="name-error" aria-live="polite"></span>
+                </div>
+
+                <!-- Campo E-mail -->
+                <div class="form-group">
+                  <label for="contact-email" class="form-label">
+                    <span>Seu e-mail</span>
+                    <span class="required-mark">*</span>
+                  </label>
+                  <div class="input-wrapper">
+                    <input 
+                      type="email" 
+                      id="contact-email" 
+                      name="email" 
+                      class="form-input" 
+                      placeholder="seuemail@exemplo.com" 
+                      required 
+                      autocomplete="email" 
+                    />
+                    <span class="input-focus-border"></span>
+                  </div>
+                  <span class="field-error" id="email-error" aria-live="polite"></span>
+                </div>
+
+                <!-- Campo Mensagem -->
+                <div class="form-group">
+                  <div class="label-with-counter">
+                    <label for="contact-message" class="form-label">
+                      <span>Sua mensagem</span>
+                      <span class="required-mark">*</span>
+                    </label>
+                    <span class="char-counter" id="char-counter">0 / 1000</span>
+                  </div>
+                  <div class="input-wrapper">
+                    <textarea 
+                      id="contact-message" 
+                      name="message" 
+                      class="form-input form-textarea" 
+                      rows="5" 
+                      placeholder="Descreva sua proposta, ideia de projeto ou deixe seu recado..." 
+                      required 
+                      minlength="10" 
+                      maxlength="1000"
+                    ></textarea>
+                    <span class="input-focus-border"></span>
+                  </div>
+                  <span class="field-error" id="message-error" aria-live="polite"></span>
+                </div>
+
+                <!-- Notificações de Status do Envio Real -->
+                <div id="form-feedback" class="form-feedback" role="alert" aria-live="assertive" hidden>
+                  <div class="feedback-content">
+                    <span class="feedback-icon" id="feedback-icon"></span>
+                    <span class="feedback-message" id="feedback-message"></span>
+                  </div>
+                </div>
+
+                <!-- Botão de Envio -->
+                <button type="submit" id="submit-btn" class="btn btn-primary btn-submit">
+                  <span class="btn-text">Enviar mensagem</span>
+                  <span class="btn-spinner" aria-hidden="true"></span>
+                  <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                  </svg>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= SEÇÃO 5: RODAPÉ ================= -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#inicio" class="logo">
+            <span class="logo-bracket">&lt;</span>
+            <span class="logo-name">Pedro Sante</span>
+            <span class="logo-bracket">/&gt;</span>
+          </a>
+          <p class="footer-tagline">
+            Transformando ideias em soluções digitais e experiências interativas.
+          </p>
+        </div>
+
+        <nav class="footer-nav" aria-label="Navegação do rodapé">
+          <span class="footer-heading">Navegação</span>
+          <ul class="footer-links">
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#sobre">Sobre mim</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer-social">
+          <span class="footer-heading">Redes Profissionais</span>
+          <div class="footer-social-links">
+            <a href="https://github.com/skullacho" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Acessar perfil de Pedro Sante no GitHub" title="GitHub">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                <path d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/>
+              </svg>
+            </a>
+            <a href="https://linkedin.com/in/pedrosante" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Acessar perfil de Pedro Sante no LinkedIn" title="LinkedIn">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9h2.77v8.37H6.46v-8.37M7.84 6.88a1.63 1.63 0 1 0 0 3.26 1.63 1.63 0 0 0 0-3.26z"/>
+              </svg>
+            </a>
+            <a href="mailto:pedrosmbsilva@gmail.com" class="social-btn" aria-label="Enviar e-mail para Pedro Sante" title="E-mail">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copyright">
+          &copy; 2026 Pedro Sante Maria Bueno Silva.
+        </p>
+        <p class="footer-note">
+          Ensino Médio Técnico em TI &bull; Desenvolvido com HTML, CSS e JavaScript puro.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Botão Flutuante Voltar ao Topo -->
+  <button id="back-to-top" class="back-to-top" aria-label="Voltar ao topo da página" title="Voltar ao topo">
+    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- Modal informativo para repositórios GitHub em preparação / privados -->
+  <dialog id="github-modal" class="custom-modal" aria-labelledby="modal-title">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3 id="modal-title" class="modal-title">Repositório no GitHub</h3>
+        <button id="modal-close" class="modal-close-btn" aria-label="Fechar modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p id="modal-project-text">Este projeto faz parte do portfólio de estudos e TCC de Pedro Sante.</p>
+        <p class="modal-subtext">Caso o repositório esteja privado ou em fase de documentação final, sinta-se à vontade para entrar em contato diretamente via formulário ou e-mail para ter acesso ao código-fonte ou agendar uma demonstração.</p>
+      </div>
+      <div class="modal-actions">
+        <a href="#contato" class="btn btn-primary btn-sm modal-contact-btn">Entrar em contato</a>
+        <button id="modal-ok" class="btn btn-secondary btn-sm">Entendido</button>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- Script principal -->
+  <script src="script.js"></script>
+</body>
+</html>
