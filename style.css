@@ -1,40 +1,42 @@
 /* ===================================================================
    PORTFÓLIO PEDRO SANTE MARIA BUENO SILVA
    Design System & Estilização Completa
-   Cores: #0B1020, #151D32, #8B5CF6, #38BDF8
+   Cores Principais: Roxo Profundo, Violeta Neon & Acentos Purpuras
    Tipografia: Space Grotesk (Títulos) & Inter (Textos)
    =================================================================== */
 
 /* --- VARIÁVEIS CSS (SISTEMA DE TEMAS) --- */
 :root {
-  /* Paleta Base Escura (Padrão) */
-  --bg-primary: #0B1020;
-  --bg-secondary: #151D32;
-  --bg-card: rgba(21, 29, 50, 0.75);
-  --bg-card-hover: rgba(30, 41, 69, 0.9);
-  --bg-input: rgba(11, 16, 32, 0.7);
-  --bg-nav: rgba(11, 16, 32, 0.85);
+  /* Paleta Base Escura (Roxo Profundo Tecnológico) */
+  --bg-primary: #0D0714;
+  --bg-secondary: #170D26;
+  --bg-card: rgba(23, 13, 38, 0.78);
+  --bg-card-hover: rgba(36, 20, 60, 0.92);
+  --bg-input: rgba(13, 7, 20, 0.75);
+  --bg-nav: rgba(13, 7, 20, 0.88);
 
-  /* Acentos de Cores */
-  --purple-accent: #8B5CF6;
-  --purple-glow: rgba(139, 92, 246, 0.35);
-  --blue-electric: #38BDF8;
-  --blue-glow: rgba(56, 189, 248, 0.35);
-  --gradient-brand: linear-gradient(135deg, #8B5CF6 0%, #38BDF8 100%);
+  /* Acentos de Roxo & Violeta */
+  --purple-primary: #A855F7;
+  --purple-accent: #C084FC;
+  --purple-neon: #E879F9;
+  --purple-glow: rgba(168, 85, 247, 0.38);
+  --blue-electric: #C084FC; /* Mapeado para Violeta Neon */
+  --blue-glow: rgba(192, 132, 252, 0.35);
+  --gradient-brand: linear-gradient(135deg, #9333EA 0%, #C084FC 50%, #E879F9 100%);
   --gradient-card: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0) 100%);
 
   /* Tipografia & Contrastes */
   --text-title: #FFFFFF;
-  --text-body: #94A3B8;
-  --text-muted: #64748B;
-  --text-code: #E2E8F0;
-  --border-subtle: rgba(255, 255, 255, 0.08);
-  --border-focus: #8B5CF6;
+  --text-body: #A1A1AA;
+  --text-muted: #71717A;
+  --text-code: #F4E8FF;
+  --border-subtle: rgba(192, 132, 252, 0.14);
+  --border-focus: #A855F7;
 
   /* Efeitos e Sombras */
-  --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.25);
-  --shadow-lg: 0 12px 36px rgba(0, 0, 0, 0.45);
-  --shadow-glow: 0 0 30px rgba(139, 92, 246, 0.25);
+  --shadow-sm: 0 4px 14px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 12px 36px rgba(0, 0, 0, 0.5);
+  --shadow-glow: 0 0 35px rgba(168, 85, 247, 0.3);
   --glass-blur: blur(16px);
   --radius-sm: 8px;
   --radius-md: 14px;
@@ -51,32 +53,34 @@
   --transition-slow: 0.6s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-/* --- TEMA CLARO (LIGHT MODE) --- */
+/* --- TEMA CLARO (LIGHT PURPLE MODE) --- */
 [data-theme="light"] {
-  --bg-primary: #F8FAFC;
-  --bg-secondary: #EDF2F7;
-  --bg-card: rgba(255, 255, 255, 0.85);
+  --bg-primary: #FAF5FF;
+  --bg-secondary: #F3E8FF;
+  --bg-card: rgba(255, 255, 255, 0.88);
   --bg-card-hover: rgba(255, 255, 255, 0.98);
   --bg-input: #FFFFFF;
-  --bg-nav: rgba(248, 250, 252, 0.9);
+  --bg-nav: rgba(250, 245, 255, 0.92);
 
-  --purple-accent: #7C3AED;
-  --purple-glow: rgba(124, 58, 237, 0.2);
-  --blue-electric: #0284C7;
-  --blue-glow: rgba(2, 132, 199, 0.2);
-  --gradient-brand: linear-gradient(135deg, #7C3AED 0%, #0284C7 100%);
-  --gradient-card: linear-gradient(180deg, rgba(255, 255, 255, 0.8) 0%, rgba(241, 245, 249, 0.5) 100%);
+  --purple-primary: #7E22CE;
+  --purple-accent: #9333EA;
+  --purple-neon: #A855F7;
+  --purple-glow: rgba(126, 34, 206, 0.2);
+  --blue-electric: #7E22CE;
+  --blue-glow: rgba(126, 34, 206, 0.2);
+  --gradient-brand: linear-gradient(135deg, #7E22CE 0%, #A855F7 100%);
+  --gradient-card: linear-gradient(180deg, rgba(255, 255, 255, 0.85) 0%, rgba(243, 232, 255, 0.5) 100%);
 
-  --text-title: #0F172A;
-  --text-body: #475569;
-  --text-muted: #64748B;
-  --text-code: #1E293B;
-  --border-subtle: rgba(15, 23, 42, 0.08);
-  --border-focus: #7C3AED;
+  --text-title: #2E1065;
+  --text-body: #4C1D95;
+  --text-muted: #6B7280;
+  --text-code: #3B0764;
+  --border-subtle: rgba(126, 34, 206, 0.14);
+  --border-focus: #7E22CE;
 
-  --shadow-sm: 0 4px 12px rgba(15, 23, 42, 0.05);
-  --shadow-lg: 0 12px 32px rgba(15, 23, 42, 0.1);
-  --shadow-glow: 0 0 30px rgba(124, 58, 237, 0.15);
+  --shadow-sm: 0 4px 12px rgba(126, 34, 206, 0.06);
+  --shadow-lg: 0 12px 32px rgba(126, 34, 206, 0.12);
+  --shadow-glow: 0 0 30px rgba(126, 34, 206, 0.18);
 }
 
 /* --- RESET & CONFIGURAÇÕES BÁSICAS --- */
@@ -154,17 +158,17 @@ img, svg {
 }
 
 .glow-1 {
-  width: 480px;
-  height: 480px;
-  background: radial-gradient(circle, var(--purple-accent) 0%, transparent 70%);
-  top: -100px;
+  width: 520px;
+  height: 520px;
+  background: radial-gradient(circle, rgba(147, 51, 234, 0.85) 0%, transparent 70%);
+  top: -120px;
   right: -100px;
 }
 
 .glow-2 {
-  width: 520px;
-  height: 520px;
-  background: radial-gradient(circle, var(--blue-electric) 0%, transparent 70%);
+  width: 540px;
+  height: 540px;
+  background: radial-gradient(circle, rgba(192, 132, 252, 0.75) 0%, transparent 70%);
   bottom: 10%;
   left: -150px;
 }
@@ -653,22 +657,22 @@ img, svg {
 .code-window {
   width: 100%;
   max-width: 480px;
-  background: #0d1326;
-  border: 1px solid rgba(139, 92, 246, 0.3);
+  background: #130a22;
+  border: 1px solid rgba(168, 85, 247, 0.35);
   border-radius: var(--radius-md);
-  box-shadow: var(--shadow-lg), 0 0 30px rgba(56, 189, 248, 0.12);
+  box-shadow: var(--shadow-lg), 0 0 35px rgba(168, 85, 247, 0.2);
   overflow: hidden;
   transition: transform var(--transition-normal);
 }
 
 [data-theme="light"] .code-window {
-  background: #0F172A;
-  border-color: rgba(124, 58, 237, 0.3);
+  background: #240e4f;
+  border-color: rgba(192, 132, 252, 0.4);
 }
 
 .code-window:hover {
   transform: translateY(-4px);
-  border-color: var(--blue-electric);
+  border-color: var(--purple-accent);
 }
 
 .code-window-header {
@@ -720,12 +724,12 @@ img, svg {
 }
 
 .token-keyword { color: #F43F5E; }
-.token-variable { color: #38BDF8; }
-.token-property { color: #A78BFA; }
+.token-variable { color: #C084FC; }
+.token-property { color: #D8B4FE; }
 .token-string { color: #34D399; }
 .token-number { color: #FBBF24; }
-.token-function { color: #60A5FA; }
-.token-comment { color: #64748B; font-style: italic; }
+.token-function { color: #E879F9; }
+.token-comment { color: #71717A; font-style: italic; }
 
 /* Indicador de Scroll */
 .scroll-indicator {
@@ -1062,17 +1066,17 @@ img, svg {
 
 /* Backgrounds visuais estilizados para cada projeto */
 .project-hangar-bg {
-  background: linear-gradient(135deg, #101B3B 0%, #0F284E 50%, #151D32 100%);
+  background: linear-gradient(135deg, #1C0F35 0%, #29144D 50%, #170D26 100%);
   background-image: 
-    radial-gradient(circle at 80% 20%, rgba(56, 189, 248, 0.25) 0%, transparent 60%),
-    linear-gradient(135deg, #0f1c3f 0%, #151f38 100%);
+    radial-gradient(circle at 80% 20%, rgba(192, 132, 252, 0.3) 0%, transparent 60%),
+    linear-gradient(135deg, #1a0d33 0%, #170d26 100%);
 }
 
 .project-gamehub-bg {
-  background: linear-gradient(135deg, #1e1338 0%, #2f194b 50%, #151D32 100%);
+  background: linear-gradient(135deg, #1e1338 0%, #3b1662 50%, #170D26 100%);
   background-image: 
-    radial-gradient(circle at 80% 20%, rgba(139, 92, 246, 0.3) 0%, transparent 60%),
-    linear-gradient(135deg, #1e1338 0%, #131d36 100%);
+    radial-gradient(circle at 80% 20%, rgba(168, 85, 247, 0.35) 0%, transparent 60%),
+    linear-gradient(135deg, #1e1338 0%, #170d26 100%);
 }
 
 .preview-overlay {
@@ -1096,15 +1100,15 @@ img, svg {
 }
 
 .preview-badge-tcc {
-  background: rgba(56, 189, 248, 0.15);
-  color: var(--blue-electric);
-  border: 1px solid rgba(56, 189, 248, 0.3);
+  background: rgba(192, 132, 252, 0.16);
+  color: var(--purple-accent);
+  border: 1px solid rgba(192, 132, 252, 0.35);
 }
 
 .preview-badge-games {
-  background: rgba(139, 92, 246, 0.18);
-  color: var(--purple-accent);
-  border: 1px solid rgba(139, 92, 246, 0.35);
+  background: rgba(168, 85, 247, 0.2);
+  color: var(--purple-neon);
+  border: 1px solid rgba(168, 85, 247, 0.4);
 }
 
 .preview-title {
@@ -1125,7 +1129,7 @@ img, svg {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, #0f162c 0%, #181530 100%);
+  background: linear-gradient(135deg, #150924 0%, #25103d 100%);
 }
 
 .upcoming-radar {
@@ -1140,7 +1144,7 @@ img, svg {
 .radar-circle {
   position: absolute;
   border-radius: 50%;
-  border: 1px dashed rgba(139, 92, 246, 0.35);
+  border: 1px dashed rgba(192, 132, 252, 0.4);
 }
 
 .radar-1 { width: 45px; height: 45px; }
@@ -1154,7 +1158,7 @@ img, svg {
   top: 0;
   left: 0;
   transform-origin: bottom right;
-  background: linear-gradient(45deg, rgba(56, 189, 248, 0.35), transparent 70%);
+  background: linear-gradient(45deg, rgba(192, 132, 252, 0.45), transparent 70%);
   animation: radar-spin 3s linear infinite;
 }
 

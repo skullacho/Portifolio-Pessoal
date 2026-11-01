@@ -186,6 +186,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function initParticles() {
       particles = [];
       const numberOfParticles = Math.floor((width * height) / 16000);
+      const purplePalette = ['#A855F7', '#C084FC', '#9333EA', '#D8B4FE', '#E879F9'];
 
       for (let i = 0; i < numberOfParticles; i++) {
         const size = Math.random() * 2 + 1;
@@ -193,7 +194,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const y = Math.random() * height;
         const speedX = (Math.random() - 0.5) * 0.7;
         const speedY = (Math.random() - 0.5) * 0.7;
-        const color = Math.random() > 0.5 ? '#8B5CF6' : '#38BDF8';
+        const color = purplePalette[Math.floor(Math.random() * purplePalette.length)];
 
         particles.push({ x, y, size, speedX, speedY, color });
       }
@@ -203,7 +204,7 @@ document.addEventListener('DOMContentLoaded', () => {
       ctx.clearRect(0, 0, width, height);
 
       const isLight = htmlRoot.getAttribute('data-theme') === 'light';
-      const lineColor = isLight ? 'rgba(124, 58, 237,' : 'rgba(139, 92, 246,';
+      const lineColor = isLight ? 'rgba(126, 34, 206,' : 'rgba(192, 132, 252,';
 
       // Atualiza e desenha partículas
       for (let i = 0; i < particles.length; i++) {
@@ -615,7 +616,7 @@ document.addEventListener('DOMContentLoaded', () => {
    * ----------------------------------------------------------------- */
   console.log(
     '%c Pedro Sante %c Portfólio Inicializado com Sucesso! ',
-    'background: #8B5CF6; color: #fff; padding: 4px 8px; border-radius: 4px 0 0 4px; font-weight: bold;',
-    'background: #38BDF8; color: #0B1020; padding: 4px 8px; border-radius: 0 4px 4px 0; font-weight: bold;'
+    'background: #9333EA; color: #fff; padding: 4px 8px; border-radius: 4px 0 0 4px; font-weight: bold;',
+    'background: #C084FC; color: #0D0714; padding: 4px 8px; border-radius: 0 4px 4px 0; font-weight: bold;'
   );
 });

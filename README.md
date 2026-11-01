@@ -8,12 +8,12 @@ Site de portfólio moderno, profissional, responsivo e de alta performance desen
 
 - **Inspiração:** Awwwards, SiteInspire e Mobbin.
 - **Paleta de Cores:**
-  - Fundo principal: `#0B1020` (azul-escuro profundo / void tech)
-  - Fundo secundário: `#151D32`
-  - Roxo de destaque: `#8B5CF6`
-  - Azul elétrico: `#38BDF8`
-  - Títulos: `#FFFFFF` / `#0F172A` (Light mode)
-  - Textos secundários: `#94A3B8` / `#475569` (Light mode)
+  - Fundo principal: `#0D0714` (preto violáceo profundo e tecnológico)
+  - Fundo secundário: `#170D26` (violeta escuro para seções e cards)
+  - Roxo principal vibrante: `#A855F7`
+  - Violeta neon de destaque: `#C084FC` e `#E879F9`
+  - Títulos: `#FFFFFF` / `#2E1065` (Light mode)
+  - Textos secundários: `#A1A1AA` / `#4C1D95` (Light mode)
 - **Tipografia:**
   - Títulos: **Space Grotesk**
   - Textos e descrições: **Inter**
